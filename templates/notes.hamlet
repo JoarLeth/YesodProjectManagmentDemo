@@ -1,0 +1,9 @@
+<form method=post enctype=#{enctype}>
+    ^{formWidget}
+    <input type=submit>
+
+<h2>Notes
+<ul>
+    $forall Entity noteId note <- notes
+        <li>
+            <a href=@{NoteR noteId}>#{noteTitle note}

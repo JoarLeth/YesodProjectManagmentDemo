@@ -1,0 +1,4 @@
+<h1>#{ticketName ticket}
+<span>#{show (ticketStart_date ticket)} - 
+<span>#{show (ticketEnd_date ticket)}
+<p>#{ticketDescription ticket}

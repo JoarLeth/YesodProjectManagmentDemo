@@ -1,0 +1,2 @@
+<h1>#{noteTitle note}
+<p>#{noteContent note}

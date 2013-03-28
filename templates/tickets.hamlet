@@ -1,0 +1,5 @@
+<form method=post enctype=#{enctype}>
+    ^{formWidget}
+    <input .btn .btn-primary type=submit value="Lägg till ticket">
+
+<h2>Tickets

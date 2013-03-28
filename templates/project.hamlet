@@ -1,0 +1,12 @@
+<h1>#{projectName project}
+<span>#{show (projectStart_date project)} - 
+<span>#{show (projectEnd_date project)}
+<p>#{projectDescription project}
+
+<h3>Tickets som tillhör projektet
+<ul>
+    $forall Entity ticketId ticket <- tickets
+        <li>
+            <a href=@{TicketR ticketId}>#{ticketName ticket}
+
+<a .btn .btn-primary href=@{TicketsR (projectId)}>Skapa ticket

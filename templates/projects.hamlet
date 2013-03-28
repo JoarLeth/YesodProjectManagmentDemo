@@ -1,0 +1,9 @@
+<form method=post enctype=#{enctype}>
+    ^{formWidget}
+    <input .btn .btn-primary type=submit value="Lägg till projekt">
+
+<h2>Projects
+<ul>
+    $forall Entity projectId project <- projects
+        <li>
+            <a href=@{ProjectR projectId}>#{projectName project}
